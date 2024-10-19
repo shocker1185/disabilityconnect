@@ -1,0 +1,43 @@
+/* 
+  UserControlPanel.css:
+  Purpose: 
+  - Styles the user control panel, providing a clear layout for managing account settings.
+  
+  Suggestions:
+  - Use visual feedback to indicate when settings are successfully updated.
+  - Add transitions to interactive elements for smooth user experience.
+*/
+
+.user-control-panel {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-control-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.user-control-panel button {
+  padding: 10px 15px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.user-control-panel button:hover {
+  background-color: #1565c0;
+}
+
+.user-control-panel label {
+  display: block;
+  margin: 15px 0;
+}

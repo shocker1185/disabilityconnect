@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './UserProfileEdit.css';
 
 /* 
   UserProfileEdit Component:

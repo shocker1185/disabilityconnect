@@ -1,0 +1,65 @@
+/* Profile container styling */
+.profile-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+  transform: scale(1.01); /* Small scale-up on hover */
+}
+
+.profile-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.profile-container p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px); /* Adds a small lift on hover */
+}
+
+/* Tooltip styling */
+button:hover::after {
+  content: attr(data-tooltip); /* Tooltip text stored as button attribute */
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  top: -30px;
+  right: 0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}

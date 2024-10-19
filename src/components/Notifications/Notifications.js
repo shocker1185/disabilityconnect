@@ -1,52 +1,53 @@
+# Create Notifications.js for displaying user notifications about messages, events, and more
+$notificationsJSContent = @"
 import React, { useState, useEffect } from 'react';
 
 /* 
   Notifications Component:
   Purpose: 
-  - Displays user notifications for messages, friend requests, event reminders, etc.
+  - Displays user notifications, such as new messages, upcoming events, and friend requests.
   
   Common Functions to Add:
-  - fetchNotifications() -> Fetches notifications for the current user from Firestore.
-  - markAsRead() -> Marks notifications as read when clicked.
+  - fetchNotifications() -> Retrieves notifications from Firebase/Firestore.
+  - handleNotificationClick() -> Handles clicking on a notification to navigate to the relevant page (e.g., messages, events).
 
   Suggestions:
-  - Implement real-time notifications using Firebase or a socket-based solution.
-  - Group notifications by type (e.g., messages, events, friend requests).
+  - Add filtering for notifications (e.g., unread, event-based).
+  - Provide a way for users to mark notifications as read or dismiss them.
 */
 
 const Notifications = () => {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    // Simulate fetching notifications
+    // Placeholder function to simulate fetching notifications
     const fetchNotifications = () => {
       setNotifications([
-        { id: 1, type: 'message', content: 'You have a new message from Jane.', read: false },
-        { id: 2, type: 'event', content: 'Your event "Therapy Session" is tomorrow.', read: false },
-        { id: 3, type: 'friend_request', content: 'John has sent you a friend request.', read: true }
+        { id: 1, type: 'Message', content: 'You have a new message from Jane', read: false },
+        { id: 2, type: 'Event', content: 'Your event starts tomorrow', read: false },
+        { id: 3, type: 'Friend Request', content: 'John sent you a friend request', read: true }
       ]);
     };
-    
+
     fetchNotifications();
   }, []);
 
-  const markAsRead = (id) => {
-    setNotifications(notifications.map(notif => 
-      notif.id === id ? { ...notif, read: true } : notif
-    ));
+  const handleNotificationClick = (notificationId) => {
+    console.log('Clicked notification with ID:', notificationId);
+    // Implement logic to mark notification as read or navigate to the relevant page
   };
 
   return (
     <div className='notifications-container'>
       <h2>Notifications</h2>
       <ul>
-        {notifications.map(notif => (
+        {notifications.map(notification => (
           <li 
-            key={notif.id} 
-            className={notif.read ? 'read' : 'unread'} 
-            onClick={() => markAsRead(notif.id)}
+            key={notification.id} 
+            onClick={() => handleNotificationClick(notification.id)}
+            className={notification.read ? 'notification-read' : 'notification-unread'}
           >
-            {notif.content}
+            {notification.content}
           </li>
         ))}
       </ul>
@@ -55,3 +56,7 @@ const Notifications = () => {
 };
 
 export default Notifications;
+"@
+
+# Write Notifications.js
+Set-Content -Path "C:\disability\src\components\Notifications\Notifications.js" -Value $notificationsJSContent
