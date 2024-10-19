@@ -1,0 +1,53 @@
+/* 
+  UserProfileEdit.css:
+  Purpose: 
+  - Styles the profile edit page, including inputs for name, location, bio, and profile picture.
+  
+  Suggestions:
+  - Use clear form inputs and buttons to ensure users can easily update their profile information.
+  - Add hover effects and transitions to buttons to enhance the user experience.
+*/
+
+.user-profile-edit-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-edit-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.user-profile-edit-container label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.user-profile-edit-container input[type='text'], 
+.user-profile-edit-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-profile-edit-container button {
+  padding: 10px 15px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.user-profile-edit-container button:hover {
+  background-color: #1565c0;
+}

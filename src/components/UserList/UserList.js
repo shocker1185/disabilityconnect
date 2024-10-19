@@ -2,37 +2,52 @@ import React, { useState, useEffect } from 'react';
 
 /* 
   UserList Component:
-  Displays a list of users, allowing for search functionality to find specific users.
+  Purpose: 
+  - Displays a list of users on the platform, including their names, profile pictures, and roles (e.g., admin, user).
+  
+  Common Functions to Add:
+  - fetchUsers() -> Retrieves the list of users from Firebase/Firestore.
+  - handleUserClick() -> Handles clicking on a user, potentially navigating to their profile.
+
+  Suggestions:
+  - Add filters to view users by roles or activity status.
+  - Implement a search function for finding specific users.
 */
+
 const UserList = () => {
   const [users, setUsers] = useState([]);
-  const [search, setSearch] = useState('');
 
   useEffect(() => {
-    // Fetch user list from the database
-    setUsers([
-      { id: 1, name: 'John Doe' },
-      { id: 2, name: 'Jane Smith' },
-      { id: 3, name: 'Alex Johnson' }
-    ]);
+    // Placeholder function to simulate fetching users
+    const fetchUsers = () => {
+      setUsers([
+        { id: 1, name: 'John Doe', profilePic: null, role: 'User' },
+        { id: 2, name: 'Jane Smith', profilePic: null, role: 'Admin' },
+        { id: 3, name: 'Emily Johnson', profilePic: null, role: 'Moderator' }
+      ]);
+    };
+
+    fetchUsers();
   }, []);
 
-  const filteredUsers = users.filter(user =>
-    user.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const handleUserClick = (userId) => {
+    console.log('Clicked user with ID:', userId);
+    // Implement navigation to user's profile
+  };
 
   return (
-    <div className='user-list'>
-      <h2>Find Users</h2>
-      <input 
-        type='text' 
-        placeholder='Search users' 
-        value={search}
-        onChange={(e) => setSearch(e.target.value)} 
-      />
+    <div className='user-list-container'>
+      <h2>User List</h2>
       <ul>
-        {filteredUsers.map(user => (
-          <li key={user.id}>{user.name}</li>
+        {users.map(user => (
+          <li key={user.id} onClick={() => handleUserClick(user.id)}>
+            <img 
+              src={user.profilePic || 'default-profile-pic.png'} 
+              alt={user.name} 
+              className='user-profile-pic' 
+            />
+            <p>{user.name} - {user.role}</p>
+          </li>
         ))}
       </ul>
     </div>

@@ -1,0 +1,62 @@
+/* 
+  NewsFeed.css:
+  Purpose: 
+  - Styles the news feed, including news posts and interactions such as likes and comments.
+  
+  Suggestions:
+  - Add spacing and readability for longer posts.
+  - Use hover effects to highlight interactive elements like buttons and comment fields.
+*/
+
+.news-feed-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-feed-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.news-feed-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-feed-container li {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.news-feed-container button {
+  padding: 8px 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.news-feed-container button:hover {
+  background-color: #1565c0;
+}
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment-section input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

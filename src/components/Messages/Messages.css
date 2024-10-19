@@ -1,0 +1,65 @@
+/* 
+  Messages.css:
+  Purpose: 
+  - Styles the user messaging system, including the message list and input field.
+  
+  Suggestions:
+  - Use clear spacing and alignment for messages to ensure readability.
+  - Add transitions for when new messages appear.
+*/
+
+.messages-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.messages-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.messages-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.messages-container li {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.message-input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.message-input input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-input button {
+  padding: 10px 15px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.message-input button:hover {
+  background-color: #1565c0;
+}
