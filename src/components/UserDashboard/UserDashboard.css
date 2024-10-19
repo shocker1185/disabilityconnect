@@ -1,0 +1,36 @@
+/* 
+  UserDashboard.css:
+  Purpose: 
+  - Styles the user dashboard page, including recent posts, events, and messages.
+  
+  Suggestions:
+  - Ensure that the dashboard layout is responsive for both desktop and mobile views.
+  - Highlight important elements like unread messages or upcoming events.
+*/
+
+.user-dashboard-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-dashboard-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.user-dashboard-container .user-info p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.user-dashboard-container .user-info {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,58 @@
+/* 
+  Settings.css:
+  Purpose: 
+  - Styles the user settings page, including inputs for email, password, and privacy settings.
+  
+  Suggestions:
+  - Ensure clear spacing and alignment for input fields and buttons.
+  - Add hover effects for buttons and inputs to improve user experience.
+*/
+
+.settings-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.settings-container label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.settings-container input[type='email'],
+.settings-container input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.settings-container input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.settings-container button {
+  padding: 10px 15px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.settings-container button:hover {
+  background-color: #1565c0;
+}

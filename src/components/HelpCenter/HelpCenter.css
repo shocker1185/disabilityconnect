@@ -1,0 +1,53 @@
+/* 
+  HelpCenter.css:
+  Purpose: 
+  - Styles the help center page, including FAQs and other help-related content.
+  
+  Suggestions:
+  - Use clear spacing and fonts to improve readability of help articles.
+  - Add hover effects to the FAQ items to make the UI more interactive.
+*/
+
+.help-center-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.help-center-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.help-center-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.help-center-container li {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.help-center-container li:hover {
+  background-color: #f0f0f0;
+}
+
+.help-center-container strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.help-center-container p {
+  font-size: 1rem;
+  color: #666;
+}

@@ -1,0 +1,42 @@
+/* 
+  Blog.css:
+  Purpose: 
+  - Style the admin blog feed, including post layouts, fonts, and margins.
+  
+  Suggestions:
+  - Make the blog visually appealing with clear spacing between posts.
+  - Add hover effects to indicate interactivity with blog posts.
+*/
+
+.blog-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.blog-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-container .blog-post {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-container .blog-post:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-container .blog-post h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-container .blog-post p {
+  font-size: 1.1rem;
+}

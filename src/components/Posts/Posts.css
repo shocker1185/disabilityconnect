@@ -1,0 +1,39 @@
+/* 
+  Posts.css:
+  Purpose: 
+  - Style the posts feed, including spacing, font sizes, and layout.
+  
+  Suggestions:
+  - Ensure a consistent and readable layout for both mobile and desktop views.
+  - Add hover effects for post items to improve user interaction.
+  - Use media queries to adjust layout for different screen sizes.
+*/
+
+.posts-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.posts-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.posts-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.posts-container li {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.posts-container li:hover {
+  background-color: #f5f5f5;
+}

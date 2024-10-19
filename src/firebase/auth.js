@@ -1,12 +1,22 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { auth } from './firebaseConfig';  // Import the Firebase Auth instance from firebaseConfig
+import { auth, db } from './firebaseConfig';  // Import the Firebase Auth and Firestore instances
+import { doc, setDoc } from "firebase/firestore";  // Firestore to store user data
 
-// Register new user with email and password
-export const registerWithEmail = async (email, password) => {
+// Register new user with email, password, and name
+export const registerWithEmail = async (email, password, name) => {
   try {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
-    console.log('User registered successfully:', user);
+
+    // Store additional user information in Firestore
+    await setDoc(doc(db, "users", user.uid), {
+      name: name,
+      email: user.email,
+      bio: '',  // Placeholder for bio, which can be edited later
+      profilePicUrl: ''  // Placeholder for profile picture
+    });
+
+    console.log('User registered and profile saved:', user);
     return user;  // Optionally return the registered user object
   } catch (error) {
     // Handle registration errors

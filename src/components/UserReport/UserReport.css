@@ -1,0 +1,54 @@
+/* 
+  UserReport.css:
+  Purpose: 
+  - Styles the user report page, including form inputs for selecting the reason and writing a description.
+  
+  Suggestions:
+  - Ensure that the form is accessible and that inputs are clearly labeled.
+  - Add confirmation messages to assure users that their report has been submitted.
+*/
+
+.user-report-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-report-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.user-report-container label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.user-report-container select,
+.user-report-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-report-container button {
+  padding: 10px 15px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-report-container button:hover {
+  background-color: #1565c0;
+}

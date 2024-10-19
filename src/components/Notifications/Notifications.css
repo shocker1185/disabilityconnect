@@ -1,0 +1,51 @@
+/* 
+  Notifications.css:
+  Purpose: 
+  - Styles the notifications list, with clear distinctions between read and unread notifications.
+  
+  Suggestions:
+  - Use different colors to distinguish between notification types (e.g., messages, events, friend requests).
+  - Add hover effects and transitions to improve interaction.
+*/
+
+.notifications-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notifications-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.notifications-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notifications-container li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notifications-container li.unread {
+  background-color: #e3f2fd;
+}
+
+.notifications-container li.read {
+  background-color: #f5f5f5;
+}
+
+.notifications-container li:hover {
+  background-color: #e0e0e0;
+}

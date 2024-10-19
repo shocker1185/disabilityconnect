@@ -1,0 +1,57 @@
+/* 
+  UserSettings.css:
+  Purpose: 
+  - Styles the user settings page, including inputs for password, notifications, and privacy.
+  
+  Suggestions:
+  - Use clear labels for settings inputs to ensure a good user experience.
+  - Add feedback such as color changes when checkboxes are checked or unchecked.
+*/
+
+.user-settings-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-settings-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.user-settings-container label {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.user-settings-container input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-settings-container input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.user-settings-container button {
+  padding: 10px 15px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-settings-container button:hover {
+  background-color: #1565c0;
+}

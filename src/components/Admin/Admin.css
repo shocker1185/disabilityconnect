@@ -1,0 +1,37 @@
+/* 
+  Admin.css:
+  Purpose: 
+  - Style the admin dashboard and news posting interface.
+  
+  Suggestions:
+  - Add clear distinctions between buttons for managing users, posts, and reports.
+  - Use subtle hover effects for admin buttons to improve user interaction.
+*/
+
+.admin-dashboard {
+  padding: 20px;
+}
+
+.admin-dashboard h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-dashboard button:hover {
+  background-color: #1565c0;
+}

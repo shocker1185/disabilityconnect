@@ -1,0 +1,28 @@
+/* 
+  PostItem.css:
+  Purpose: 
+  - Style individual post items, including font sizes, colors, and layout.
+  
+  Suggestions:
+  - Highlight the author’s name for clarity.
+  - Add padding and margins to create better spacing between content.
+*/
+
+.post-item {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.post-item p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.post-item small {
+  display: block;
+  margin-top: 10px;
+  color: #888;
+  font-size: 0.9rem;
+}

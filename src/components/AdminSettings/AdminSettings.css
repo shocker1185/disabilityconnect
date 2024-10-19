@@ -1,0 +1,49 @@
+/* 
+  AdminSettings.css:
+  Purpose: 
+  - Styles the admin platform settings page, including toggle switches for settings and management options.
+  
+  Suggestions:
+  - Ensure clear visual cues for active/inactive settings.
+  - Add hover effects on buttons to enhance usability.
+*/
+
+.admin-settings-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-settings-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.admin-settings-container label {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.admin-settings-container input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.admin-settings-container button {
+  padding: 10px 15px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-settings-container button:hover {
+  background-color: #1565c0;
+}
