@@ -4,64 +4,94 @@
   padding: 20px;
   background-color: #f5f5f5;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 1.5s ease-in-out; /* Fade in the entire page */
+  position: relative; /* Allows positioning of background elements */
 }
 
-/* Animated image styling */
-.form-image {
+/* Top banner with rotating messages */
+.top-banner {
   width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: slideIn 1s ease-in-out;  /* Slide in animation */
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
 }
 
-/* Animated heading */
-.animated-heading {
+.rotating-message {
+  font-size: 24px;
   color: #1976d2;
-  margin-bottom: 20px;
-  animation: fadeInUp 1.2s ease-in-out;  /* Fade in and up animation */
+  opacity: 0.3;
+  animation: fadeRotate 8s infinite;
 }
 
-/* Animated box (Login/Register section) */
+/* Morphing background shapes */
+.background-shapes {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-shapes svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navigation bar */
+.nav-bar {
+  background-color: #1976d2;
+  color: #fff;
+  animation: waveBackground 10s linear infinite;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  color: #ff4081;
+}
+
+/* Left and right navigation groups */
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+
+/* Main content animations */
 .animated-box {
-  animation: fadeIn 1.5s ease-in-out;  /* Fade in animation */
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* Animated button */
 .animated-button {
-  margin-top: 20px;
-  color: #dc004e;
-  animation: bounceIn 1.3s ease-in-out;  /* Bounce animation for button */
+  animation: bounceIn 1.3s ease-in-out;
 }
 
-/* Fade in effect */
-@keyframes fadeIn {
+/* Keyframes for rotating messages */
+@keyframes fadeRotate {
   0% {
     opacity: 0;
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    opacity: 0.6;
+    transform: rotate(20deg) scale(1.2);
   }
   100% {
-    opacity: 1;
-  }
-}
-
-/* Slide in effect for image */
-@keyframes slideIn {
-  0% {
     opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+    transform: rotate(0deg) scale(0.8);
   }
 }
 
-/* Fade in and move up for the heading */
+/* Keyframes for content animations */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -73,7 +103,6 @@
   }
 }
 
-/* Bounce in animation for the button */
 @keyframes bounceIn {
   0% {
     transform: scale(0.8);
@@ -85,5 +114,18 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* Keyframes for animated wave background in the navigation */
+@keyframes waveBackground {
+  0% {
+    background-color: #1976d2;
+  }
+  50% {
+    background-color: #64b5f6;
+  }
+  100% {
+    background-color: #1976d2;
   }
 }

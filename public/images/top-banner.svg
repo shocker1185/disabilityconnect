@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color: #ff9a9e; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #fad0c4; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#grad1)" d="M0,64L48,96C96,128,192,192,288,213.3C384,235,480,213,576,186.7C672,160,768,128,864,138.7C960,149,1056,203,1152,208C1248,213,1344,171,1392,149.3L1440,128V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0Z"></path>
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="50 0" dur="10s" repeatCount="indefinite" />
+</svg>

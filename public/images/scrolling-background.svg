@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#d4fc79" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,128C384,139,480,117,576,117.3C672,117,768,139,864,144C960,149,1056,139,1152,133.3C1248,128,1344,128,1392,128L1440,128V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0Z"></path>
+  <animateTransform attributeName="transform" type="translate" from="0 0" to="-1440 0" dur="20s" repeatCount="indefinite" />
+</svg>
